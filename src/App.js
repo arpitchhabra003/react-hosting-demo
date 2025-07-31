@@ -34,7 +34,7 @@ const App = () => {
                       : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                   }`}
                 >
-                  <Icon size={18} />
+                  <Icon size={18} aria-hidden="true" />
                   <span>{item.name}</span>
                 </button>
               );
@@ -70,7 +70,7 @@ const App = () => {
                       : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                   }`}
                 >
-                  <Icon size={18} />
+                  <Icon size={18} aria-hidden="true" />
                   <span>{item.name}</span>
                 </button>
               );
@@ -111,7 +111,7 @@ const App = () => {
         <div className="mt-20 grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md">
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-              <User className="text-blue-600" size={24} />
+              <User className="text-blue-600" size={24} aria-hidden="true" />
             </div>
             <h3 className="text-xl font-semibold mb-2">About Us</h3>
             <p className="text-gray-600">Learn more about our mission and values.</p>
@@ -119,7 +119,7 @@ const App = () => {
           
           <div className="bg-white p-6 rounded-xl shadow-md">
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-              <Briefcase className="text-green-600" size={24} />
+              <Briefcase className="text-green-600" size={24} aria-hidden="true" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Our Services</h3>
             <p className="text-gray-600">Discover what we can do for you.</p>
@@ -127,7 +127,7 @@ const App = () => {
           
           <div className="bg-white p-6 rounded-xl shadow-md">
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-              <Mail className="text-purple-600" size={24} />
+              <Mail className="text-purple-600" size={24} aria-hidden="true" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Contact</h3>
             <p className="text-gray-600">Get in touch with our team.</p>
