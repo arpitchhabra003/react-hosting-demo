@@ -1,24 +1,33 @@
 {
-  "$schema": "./node_modules/package-json-schema/schema.json",
   "name": "sample-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://react-hosting-demo.vercel.app",
+  "description": "Professional web development services website built with React",
+  "keywords": [
+    "react",
+    "web-development",
+    "hosting",
+    "seo"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.6.4",
-    "@testing-library/react": "^16.3.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "lucide-react": "^0.535.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-scripts": "^5.0.1",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "echo 'Build completed successfully!'"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^4.1.13"
   }
 }

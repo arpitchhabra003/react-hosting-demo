@@ -1,53 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87R5MFD6R0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- SEO Meta Tags -->
+  <title>MyWebsite - Professional Web Development & Hosting Solutions</title>
+  <meta name="description" content="Expert web development services using React, modern hosting solutions, and digital marketing strategies. Build responsive websites with professional design and optimal performance." />
+  <meta name="keywords" content="web development, React development, web hosting, digital marketing, responsive design, SEO optimization, professional websites, custom web applications" />
+  <meta name="author" content="MyWebsite" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="MyWebsite - Professional Web Development & Hosting Solutions" />
+  <meta property="og:description" content="Expert web development services using React, modern hosting solutions, and digital marketing strategies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="%PUBLIC_URL%" />
+  <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="MyWebsite" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MyWebsite - Professional Web Development Services" />
+  <meta name="twitter:description" content="Expert web development services using React, modern hosting solutions, and digital marketing strategies." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/twitter-image.jpg" />
+  <meta name="twitter:site" content="@mywebsite" />
+  <meta name="twitter:creator" content="@mywebsite" />
+  
+  <!-- Favicons and App Icons -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon-180x180.png" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="%PUBLIC_URL%" />
+  
+  <!-- Preconnect to improve performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  
+  <!-- App Manifest for PWA -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <!-- Structured Data for Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MyWebsite",
+    "description": "Professional web development and hosting services using React and modern technologies",
+    "url": "%PUBLIC_URL%",
+    "logo": "%PUBLIC_URL%/logo512.png",
+    "foundingDate": "2024",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-555-123-4567",
+      "contactType": "Customer Service",
+      "email": "hello@mywebsite.com",
+      "availableLanguage": "English"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Web Street",
+      "addressLocality": "Digital City",
+      "addressRegion": "DC",
+      "postalCode": "12345",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://twitter.com/mywebsite",
+      "https://linkedin.com/company/mywebsite",
+      "https://facebook.com/mywebsite"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "React Web Development",
+            "description": "Custom websites built with modern React technology"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Hosting",
+            "description": "Reliable hosting solutions with 99.9% uptime"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Marketing",
+            "description": "SEO optimization and digital marketing consulting"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 
-      gtag('config', 'G-87R5MFD6R0');
-    </script>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <!-- Google Analytics (replace G-XXXXXXXXXX with your actual tracking ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-87R5MFD6R0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-87R5MFD6R0', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  </script>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <!-- Performance Optimization -->
+  <style>
+    /* Critical CSS for above-the-fold content */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Loading spinner */
+    .loading-spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+    }
+    
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #e5e7eb;
+      border-top: 4px solid #2563eb;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<body>
+  <!-- Skip navigation link for accessibility -->
+  <a href="#main-content" class="sr-only" style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;">
+    Skip to main content
+  </a>
+  
+  <!-- Loading indicator -->
+  <div id="loading" class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+  
+  <!-- No JavaScript fallback -->
+  <noscript>
+    <div style="padding: 20px; text-align: center; background: #fee; border: 1px solid #fcc;">
+      <h1>JavaScript Required</h1>
+      <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings to view this site.</p>
+    </div>
+  </noscript>
+  
+  <!-- React app root -->
+  <div id="root"></div>
+  
+  <!-- Hide loading spinner when React loads -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        const loading = document.getElementById('loading');
+        if (loading && document.getElementById('root').children.length > 0) {
+          loading.style.display = 'none';
+        }
+      }, 100);
+    });
+    
+    // Performance monitoring
+    window.addEventListener('load', function() {
+      if ('performance' in window && 'timing' in window.performance) {
+        const timing = window.performance.timing;
+        const loadTime = timing.loadEventEnd - timing.navigationStart;
+        
+        // Send to analytics if available
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'timing_complete', {
+            name: 'load',
+            value: loadTime
+          });
+        }
+      }
+    });
+  </script>
+  
+  <!-- Service Worker for PWA (optional) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('SW registered: ', registration);
+        }).catch(function(registrationError) {
+          console.log('SW registration failed: ', registrationError);
+        });
+      });
+    }
+  </script>
+</body>
 </html>
