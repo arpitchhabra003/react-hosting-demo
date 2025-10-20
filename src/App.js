@@ -146,12 +146,14 @@ const App = () => {
     <div className="hero-section">
       <div className="container">
         <header className="hero-content">
-          <h2 className="hero-title">
+          <h1 className="hero-title">
             Welcome to MyWebsite - Professional Web Development Services
-          </h2>
+          </h1>
           <p className="hero-description">
-            Expert web development services using React, modern hosting solutions, and digital marketing strategies. 
-            Build responsive websites with professional design and optimal performance for your business success.
+            Expert web development services using React, modern hosting solutions, 
+            and digital marketing strategies. Our web development services help 
+            businesses build responsive websites with professional design and 
+            optimal performance.
           </p>
           <div className="hero-buttons">
             <button
